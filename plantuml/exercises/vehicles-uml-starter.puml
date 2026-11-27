@@ -36,11 +36,11 @@ class Car {
 class ElectricCar {
     - batteryLevel : int
     + ElectricCar(make : String)
-    + maxSpeed() : int
+    + abstract maxSpeed() : int
     + charge() : void
 }
 
-Vehicle --|> Car
+Vehicle <|-- Car
 Car <|-- ElectricCar
 Chargeable <|.. ElectricCar
 
