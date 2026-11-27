@@ -30,13 +30,13 @@ abstract class Vehicle {
 
 class Car {
     + Car(make: String)
-    + maxSpeed() : int
+    + {abstract} maxSpeed() : int
 }
 
 class ElectricCar {
     - batteryLevel : int
     + ElectricCar(make : String)
-    + abstract maxSpeed() : int
+    + maxSpeed() : int
     + charge() : void
 }
 
