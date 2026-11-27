@@ -40,7 +40,7 @@ class ElectricCar {
     + charge() : void
 }
 
-Vehicle <|-- Car
+Vehicle --|> Car
 Car <|-- ElectricCar
 Chargeable <|.. ElectricCar
 
